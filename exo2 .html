@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices sur les Modaux</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #005792;
+            margin-bottom: 20px;
+        }
+        .exercice {
+            margin: 25px 0;
+        }
+        .question {
+            margin: 10px 0;
+        }
+        input[type="text"] {
+            width: 60%;
+            padding: 12px;
+            margin-top: 8px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #005792;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #004570;
+        }
+        .result {
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #e8f0fe;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exercices sur les Modaux</h1>
+        <form id="modal-exercise-form">
+            <!-- Exercice 1 -->
+            <div class="exercice">
+                <h2>Exercice 1</h2>
+                <div class="question">
+                    <label>1. You (can) swim when you were five.</label><br>
+                    <input type="text" name="q1">
+                </div>
+                <div class="question">
+                    <label>2. They (must) finish the project by tomorrow.</label><br>
+                    <input type="text" name="q2">
+                </div>
+                <div class="question">
+                    <label>3. She (should) call her parents more often.</label><br>
+                    <input type="text" name="q3">
+                </div>
+                <div class="question">
+                    <label>4. We (could) see the mountains from here.</label><br>
+                    <input type="text" name="q4">
+                </div>
+                <div class="question">
+                    <label>5. He (may) come to the party later.</label><br>
+                    <input type="text" name="q5">
+                </div>
+                <div class="question">
+                    <label>6. You (must) wear a helmet on this site.</label><br>
+                    <input type="text" name="q6">
+                </div>
+                <div class="question">
+                    <label>7. They (might) not know the answer.</label><br>
+                    <input type="text" name="q7">
+                </div>
+                <div class="question">
+                    <label>8. She (will) arrive soon.</label><br>
+                    <input type="text" name="q8">
+                </div>
+                <div class="question">
+                    <label>9. We (shall) leave now?</label><br>
+                    <input type="text" name="q9">
+                </div>
+                <div class="question">
+                    <label>10. He (can) drive when he was 18.</label><br>
+                    <input type="text" name="q10">
+                </div>
+            </div>
+
+            <!-- Exercice 2 -->
+            <div class="exercice">
+                <h2>Exercice 2</h2>
+                <div class="question">
+                    <label>1. You (must) not forget to lock the door.</label><br>
+                    <input type="text" name="q11">
+                </div>
+                <div class="question">
+                    <label>2. They (could) have been more careful.</label><br>
+                    <input type="text" name="q12">
+                </div>
+                <div class="question">
+                    <label>3. She (should) be here by now.</label><br>
+                    <input type="text" name="q13">
+                </div>
+                <div class="question">
+                    <label>4. We (might) be late.</label><br>
+                    <input type="text" name="q14">
+                </div>
+                <div class="question">
+                    <label>5. He (may) not like the movie.</label><br>
+                    <input type="text" name="q15">
+                </div>
+                <div class="question">
+                    <label>6. You (can) leave early if you finish.</label><br>
+                    <input type="text" name="q16">
+                </div>
+                <div class="question">
+                    <label>7. They (must) have forgotten the keys.</label><br>
+                    <input type="text" name="q17">
+                </div>
+                <div class="question">
+                    <label>8. She (will) call you later.</label><br>
+                    <input type="text" name="q18">
+                </div>
+                <div class="question">
+                    <label>9. We (shall) help you move next weekend.</label><br>
+                    <input type="text" name="q19">
+                </div>
+                <div class="question">
+                    <label>10. He (could) have done better on the test.</label><br>
+                    <input type="text" name="q20">
+                </div>
+            </div>
+
+            <!-- Exercice 3 -->
+            <div class="exercice">
+                <h2>Exercice 3</h2>
+                <div class="question">
+                    <label>1. I (might) go to the gym later.</label><br>
+                    <input type="text" name="q21">
+                </div>
+                <div class="question">
+                    <label>2. They (should) try again.</label><br>
+                    <input type="text" name="q22">
+                </div>
+                <div class="question">
+                    <label>3. She (will) help you with your homework.</label><br>
+                    <input type="text" name="q23">
+                </div>
+                <div class="question">
+                    <label>4. We (may) visit them this weekend.</label><br>
+                    <input type="text" name="q24">
+                </div>
+                <div class="question">
+                    <label>5. He (must) clean his room.</label><br>
+                    <input type="text" name="q25">
+                </div>
+                <div class="question">
+                    <label>6. You (can) ask me for help anytime.</label><br>
+                    <input type="text" name="q26">
+                </div>
+                <div class="question">
+                    <label>7. They (might) not have received the message.</label><br>
+                    <input type="text" name="q27">
+                </div>
+                <div class="question">
+                    <label>8. She (could) have been more polite.</label><br>
+                    <input type="text" name="q28">
+                </div>
+                <div class="question">
+                    <label>9. We (shall) meet them at the station.</label><br>
+                    <input type="text" name="q29">
+                </div>
+                <div class="question">
+                    <label>10. He (will) not come to the meeting.</label><br>
+                    <input type="text" name="q30">
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Envoyer</button>
+        </form>
+
+        <div id="results" style="display:none;">
+            <h2>Résultats</h2>
+            <!-- Résultats seront affichés ici -->
+        </div>
+    </div>
+
+    <script>
+        const correctAnswers = {
+            q1: "could", q2: "must", q3: "should", q4: "could", q5: "may",
+            q6: "must", q7: "might", q8: "will", q9: "shall", q10: "could",
+            q11: "must", q12: "could", q13: "should", q14: "might", q15: "may",
+            q16: "can", q17: "must", q18: "will", q19: "shall", q20: "could",
+            q21: "might", q22: "should", q23: "will", q24: "may", q25: "must",
+            q26: "can", q27: "might", q28: "could", q29: "shall", q30: "will not"
+        };
+
+        const form = document.getElementById('modal-exercise-form');
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            let resultSection = document.getElementById('results');
+            resultSection.innerHTML = '<h2>Résultats</h2>';
+            resultSection.style.display = 'block';
+
+            const formData = new FormData(form);
+            let score = 0;
+
+            formData.forEach((value, key) => {
+                if (value.toLowerCase() === correctAnswers[key]) {
+                    resultSection.innerHTML += `<p>Question ${key}: Correct!</p>`;
+                    score++;
+                } else {
+                    resultSection.innerHTML += `<p>Question ${key}: Incorrect (Réponse correcte: ${correctAnswers[key]})</p>`;
+                }
+            });
+
+            resultSection.innerHTML += `<p>Score total: ${score}/30</p>`;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjectives and Adverbs Exercises</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .exercise {
+            margin-bottom: 30px;
+        }
+
+        ol {
+            list-style-position: inside;
+            padding-left: 0;
+        }
+
+        input[type="text"] {
+            width: 180px;
+            padding: 5px;
+            margin-left: 10px;
+            margin-top: 5px;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .correct {
+            color: green;
+        }
+
+        .incorrect {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Adjectives and Adverbs Exercises</h1>
+
+        <form id="exercise-form">
+            <!-- Adjectives Exercise -->
+            <div class="exercise">
+                <h2>Exercise 1: Adjectives</h2>
+                <p>Fill in the blanks with the correct form of the adjective:</p>
+                <ol>
+                    <li>He is a very <input type="text" name="answer1"> (tall) person.</li>
+                    <li>The weather is <input type="text" name="answer2"> (cold) today than yesterday.</li>
+                    <li>That was the <input type="text" name="answer3"> (good) movie I've seen.</li>
+                    <li>This road is much <input type="text" name="answer4"> (safe) than the other one.</li>
+                    <li>The book is <input type="text" name="answer5"> (interesting) than the movie.</li>
+                    <li>He gave a <input type="text" name="answer6"> (funny) speech at the wedding.</li>
+                    <li>The <input type="text" name="answer7"> (old) he gets, the <input type="text" name="answer8"> (wise) he becomes.</li>
+                    <li>She is the <input type="text" name="answer9"> (beautiful) girl in the class.</li>
+                    <li>The situation is <input type="text" name="answer10"> (bad) than I expected.</li>
+                </ol>
+            </div>
+
+            <!-- Adverbs Exercise -->
+            <div class="exercise">
+                <h2>Exercise 2: Adverbs</h2>
+                <p>Fill in the blanks with the correct adverb:</p>
+                <ol>
+                    <li>She sings very <input type="text" name="answer11"> (beautiful).</li>
+                    <li>He ran <input type="text" name="answer12"> (fast) to catch the bus.</li>
+                    <li>They work <input type="text" name="answer13"> (hard) to finish the project on time.</li>
+                    <li>The teacher spoke <input type="text" name="answer14"> (clearly) so that everyone could understand.</li>
+                    <li>The child laughed <input type="text" name="answer15"> (happily) at the clown.</li>
+                    <li>She drives <input type="text" name="answer16"> (carefully) in the city.</li>
+                    <li>The train arrived <input type="text" name="answer17"> (late) today.</li>
+                    <li>He answered the question <input type="text" name="answer18"> (correct).</li>
+                    <li>The athlete performed <input type="text" name="answer19"> (amazingly) in the competition.</li>
+                    <li>The baby is sleeping <input type="text" name="answer20"> (peacefully) in the crib.</li>
+                </ol>
+            </div>
+
+            <!-- Mixed Adjectives and Adverbs -->
+            <div class="exercise">
+                <h2>Exercise 3: Adjectives and Adverbs</h2>
+                <p>Choose whether to use an adjective or an adverb in the blanks:</p>
+                <ol>
+                    <li>He runs <input type="text" name="answer21"> (quick/quickly) in the mornings.</li>
+                    <li>She is a <input type="text" name="answer22"> (good/well) student.</li>
+                    <li>The soup smells <input type="text" name="answer23"> (nice/nicely).</li>
+                    <li>They performed <input type="text" name="answer24"> (bad/badly) during the concert.</li>
+                    <li>He spoke <input type="text" name="answer25"> (polite/politely) to the guests.</li>
+                    <li>This is a <input type="text" name="answer26"> (beautiful/beautifully) painting.</li>
+                    <li>She danced <input type="text" name="answer27"> (graceful/gracefully) at the party.</li>
+                    <li>The exam was <input type="text" name="answer28"> (easy/easily) than expected.</li>
+                    <li>He looks <input type="text" name="answer29"> (angry/angrily) all the time.</li>
+                    <li>The children played <input type="text" name="answer30"> (happy/happily) in the garden.</li>
+                </ol>
+            </div>
+
+            <button type="button" onclick="checkAnswers()">Submit</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function checkAnswers() {
+            const answers = {
+                // Adjectives
+                answer1: "tall",
+                answer2: "colder",
+                answer3: "best",
+                answer4: "safer",
+                answer5: "more interesting",
+                answer6: "funny",
+                answer7: "older",
+                answer8: "wiser",
+                answer9: "most beautiful",
+                answer10: "worse",
+                
+                // Adverbs
+                answer11: "beautifully",
+                answer12: "fast",
+                answer13: "hard",
+                answer14: "clearly",
+                answer15: "happily",
+                answer16: "carefully",
+                answer17: "late",
+                answer18: "correctly",
+                answer19: "amazingly",
+                answer20: "peacefully",
+
+                // Mixed Adjectives and Adverbs
+                answer21: "quickly",
+                answer22: "good",
+                answer23: "nice",
+                answer24: "badly",
+                answer25: "politely",
+                answer26: "beautiful",
+                answer27: "gracefully",
+                answer28: "easier",
+                answer29: "angry",
+                answer30: "happily"
+            };
+
+            let form = document.getElementById('exercise-form');
+            let result = document.getElementById('result');
+            let score = 0;
+            let total = Object.keys(answers).length;
+
+            result.innerHTML = ""; // Clear previous results
+
+            // Check answers
+            Object.keys(answers).forEach((key, index) => {
+                let userAnswer = form[key].value.trim().toLowerCase();
+                let correctAnswer = answers[key].toLowerCase();
+
+                // Create feedback message
+                let feedback = document.createElement('p');
+                feedback.innerHTML = `Question ${index + 1}: Your answer: "${userAnswer}" - `;
+
+                if (userAnswer === correctAnswer) {
+                    score++;
+                    feedback.classList.add('correct');
+                    feedback.innerHTML += 'Correct!';
+                } else {
+                    feedback.classList.add('incorrect');
+                    feedback.innerHTML += `Incorrect. Correct answer: "${correctAnswer}"`;
+                }
+
+                result.appendChild(feedback);
+            });
+
+            let finalScore = document.createElement('h3');
+            finalScore.innerHTML = `You got ${score} out of ${total} correct.`;
+            result.appendChild(finalScore);
+        }
+    </script>
+</body>
+</html>

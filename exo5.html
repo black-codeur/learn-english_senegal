@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Sentences Exercises</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conditional Sentences Exercises</h1>
+
+        <form id="exercise-form">
+            <div class="exercise">
+                <h2>Exercise 1: First Conditional</h2>
+                <p>Complete the sentences with the correct form of the verb in parentheses:</p>
+                <ol>
+                    <li>If it <input type="text" name="answer1"> (rain), we will stay at home.</li>
+                    <li>If you <input type="text" name="answer2"> (study), you will pass the exam.</li>
+                    <li>If she <input type="text" name="answer3"> (invite) me, I will come to her party.</li>
+                    <li>If they <input type="text" name="answer4"> (be) late, we will start without them.</li>
+                    <li>If you <input type="text" name="answer5"> (ask) nicely, they will help you.</li>
+                    <li>If he <input type="text" name="answer6"> (get) a good job, he will move to a bigger house.</li>
+                    <li>If we <input type="text" name="answer7"> (not/leave) now, we will miss the bus.</li>
+                    <li>If I <input type="text" name="answer8"> (win) the lottery, I will travel the world.</li>
+                    <li>If you <input type="text" name="answer9"> (not/hurry), you will be late for the meeting.</li>
+                    <li>If they <input type="text" name="answer10"> (not/call), we won't know what to do.</li>
+                </ol>
+            </div>
+
+            <div class="exercise">
+                <h2>Exercise 2: Second Conditional</h2>
+                <p>Complete the sentences with the correct form of the verb in parentheses:</p>
+                <ol>
+                    <li>If I <input type="text" name="answer11"> (have) more money, I would buy a new car.</li>
+                    <li>If she <input type="text" name="answer12"> (be) younger, she would travel more.</li>
+                    <li>If we <input type="text" name="answer13"> (live) in a bigger house, we would invite more people.</li>
+                    <li>If you <input type="text" name="answer14"> (study) harder, you would get better grades.</li>
+                    <li>If they <input type="text" name="answer15"> (not/eat) so much, they would feel better.</li>
+                    <li>If he <input type="text" name="answer16"> (play) more often, he would become a better player.</li>
+                    <li>If I <input type="text" name="answer17"> (win) a million dollars, I would donate to charity.</li>
+                    <li>If she <input type="text" name="answer18"> (not/lose) the keys, we would have entered the house.</li>
+                    <li>If you <input type="text" name="answer19"> (be) taller, you would play basketball better.</li>
+                    <li>If they <input type="text" name="answer20"> (move) to the city, they would find better jobs.</li>
+                </ol>
+            </div>
+
+            <div class="exercise">
+                <h2>Exercise 3: Third Conditional</h2>
+                <p>Complete the sentences with the correct form of the verb in parentheses:</p>
+                <ol>
+                    <li>If I <input type="text" name="answer21"> (know) about the party, I would have gone.</li>
+                    <li>If they <input type="text" name="answer22"> (arrive) earlier, they would have met the famous actor.</li>
+                    <li>If you <input type="text" name="answer23"> (study) more, you would have passed the exam.</li>
+                    <li>If she <input type="text" name="answer24"> (not/miss) the bus, she would have been on time.</li>
+                    <li>If we <input type="text" name="answer25"> (take) a taxi, we would have arrived earlier.</li>
+                    <li>If he <input type="text" name="answer26"> (be) more careful, he wouldn't have broken the vase.</li>
+                    <li>If I <input type="text" name="answer27"> (see) you, I would have said hello.</li>
+                    <li>If you <input type="text" name="answer28"> (not/forget) the tickets, we would have gone to the concert.</li>
+                    <li>If they <input type="text" name="answer29"> (not/get) lost, they would have arrived on time.</li>
+                    <li>If we <input type="text" name="answer30"> (know) the answer, we would have told you.</li>
+                </ol>
+            </div>
+
+            <button type="button" onclick="checkAnswers()">Submit</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+h2 {
+    color: #333;
+}
+
+.exercise {
+    margin-bottom: 30px;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+input[type="text"] {
+    width: 150px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+</style>
+
+<script>
+  function checkAnswers() {
+    const answers = {
+        // Exercise 1: First Conditional
+        answer1: "rains",
+        answer2: "study",
+        answer3: "invites",
+        answer4: "are",
+        answer5: "ask",
+        answer6: "gets",
+        answer7: "don't leave",
+        answer8: "win",
+        answer9: "don't hurry",
+        answer10: "don't call",
+        
+        // Exercise 2: Second Conditional
+        answer11: "had",
+        answer12: "were",
+        answer13: "lived",
+        answer14: "studied",
+        answer15: "didn't eat",
+        answer16: "played",
+        answer17: "won",
+        answer18: "hadn't lost",
+        answer19: "were",
+        answer20: "moved",
+        
+        // Exercise 3: Third Conditional
+        answer21: "had known",
+        answer22: "had arrived",
+        answer23: "had studied",
+        answer24: "hadn't missed",
+        answer25: "had taken",
+        answer26: "had been",
+        answer27: "had seen",
+        answer28: "hadn't forgotten",
+        answer29: "hadn't got",
+        answer30: "had known"
+    };
+
+    let form = document.getElementById('exercise-form');
+    let result = document.getElementById('result');
+    let score = 0;
+    let total = Object.keys(answers).length;
+    
+    Object.keys(answers).forEach((key, index) => {
+        let userAnswer = form[key].value.trim().toLowerCase();
+        let correctAnswer = answers[key].toLowerCase();
+        
+        if (userAnswer === correctAnswer) {
+            score++;
+        }
+    });
+
+    result.innerHTML = `You got ${score} out of ${total} correct.`;
+}
+  
+</script>
